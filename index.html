@@ -1,23 +1,117 @@
-<html>
-<head>
-    <title>My Web Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a simple web page.</p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devops-yasan | DevOps & Cloud-Native Portfolio</title>
+    <meta
+      name="description"
+      content="devops-yasan builds modern DevOps and cloud-native solutions with Go, Kubernetes, Terraform, and GitHub Actions."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <nav class="container nav-wrap" aria-label="Primary">
+        <a class="logo" href="#home">devops-yasan</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section container reveal">
+        <p class="hero-kicker">Organization Portfolio</p>
+        <h1>devops-yasan</h1>
+        <p class="subtitle">Building Modern DevOps &amp; Cloud-Native Solutions</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
+      </section>
+
+      <section id="about" class="section container reveal">
+        <h2>About</h2>
+        <p>
+          devops-yasan is a DevOps and cloud engineering focused organization delivering resilient,
+          scalable, and automated platforms for modern teams.
+        </p>
+        <div class="badge-grid" aria-label="Core technologies">
+          <span class="badge">Go</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Kubernetes</span>
+          <span class="badge">Terraform</span>
+          <span class="badge">GitHub Actions</span>
+          <span class="badge">Linux</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>go-rest-api</h3>
+            <p>High-performance REST API built with Go and Gin framework</p>
+            <div class="card-meta"><span class="lang">Go</span></div>
+            <a class="btn btn-small" href="https://github.com/devops-yasan/go-rest-api" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>k8s-helm-charts</h3>
+            <p>Production-ready Kubernetes Helm charts for microservices</p>
+            <div class="card-meta"><span class="lang">Helm</span></div>
+            <a class="btn btn-small" href="https://github.com/devops-yasan/k8s-helm-charts" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>terraform-aws-infra</h3>
+            <p>Infrastructure as Code for AWS using Terraform modules</p>
+            <div class="card-meta"><span class="lang">Terraform</span></div>
+            <a class="btn btn-small" href="https://github.com/devops-yasan/terraform-aws-infra" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>ci-cd-pipeline</h3>
+            <p>GitHub Actions CI/CD pipeline templates for Go projects</p>
+            <div class="card-meta"><span class="lang">YAML</span></div>
+            <a class="btn btn-small" href="https://github.com/devops-yasan/ci-cd-pipeline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>docker-compose-stack</h3>
+            <p>Docker Compose stacks for local development environments</p>
+            <div class="card-meta"><span class="lang">Docker</span></div>
+            <a class="btn btn-small" href="https://github.com/devops-yasan/docker-compose-stack" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section container reveal">
+        <h2>Skills &amp; Tech Stack</h2>
+        <div class="skill-grid">
+          <span class="badge">Go</span>
+          <span class="badge">Kubernetes</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Terraform</span>
+          <span class="badge">AWS</span>
+          <span class="badge">GitHub Actions</span>
+          <span class="badge">Linux</span>
+          <span class="badge">Prometheus</span>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          GitHub: <a href="https://github.com/devops-yasan" target="_blank" rel="noopener noreferrer">https://github.com/devops-yasan</a>
+        </p>
+        <p>&copy; <span id="year"></span> devops-yasan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
